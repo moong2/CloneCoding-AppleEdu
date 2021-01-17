@@ -4,5 +4,51 @@ body{
 ul{
     margin : 0px;
     padding : 0px;
+    list-style : none;
+}
+a{
+    text-decoration: none;
+    color : #fff;
 }
 
+header{
+    position : relative;
+    background : #444;
+    height : 40px;
+}
+.header__inside01{
+    position : absolute;
+    left : 50%;
+    width : 68vw;
+    height : 100%;
+    transform : translate(-50%, 0);
+}
+#header__categoryList{
+    position : absolute;
+    height : 100%;
+    width : 100%;
+    line-height : 40px;
+    color : #fff;
+    cursor : pointer;
+    font-size: 10px;
+    display : flex;
+    font-family : "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-weight : 800;
+    letter-spacing: -0.08em;
+}
+#header__categoryList li{
+    padding-left : 20px;
+}
+#header__categoryList li+li::before{
+    background : #5a6a76;
+    width : 1px;
+    height : 13px;
+    margin-left : -10px;
+    margin-top : 13px;
+    position : absolute;
+    content : '';
+    display : inline-block;
+}
+#header__categoryList li a:hover{
+    color : #06c;
+}
