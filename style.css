@@ -100,6 +100,9 @@ aside{
     height : 100%;
     left : 50%;
     transform : translate(-50%, 0);
+    animation-name : aside__direction;
+    animation-duration : 1s;
+    animation-iteration-count : 1;
 }
 #aside__categoryList{
     position : absolute;
@@ -130,4 +133,12 @@ aside{
 .aside__new{
     font-size : 10px;
     color : #F56300;
+}
+@-webkit-keyframes aside__direction{
+    from{
+        left : 60vw;
+    }
+    to{
+        left : 50vw;
+    }
 }
