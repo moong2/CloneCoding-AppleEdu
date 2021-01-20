@@ -142,3 +142,57 @@ aside{
         left : 50vw;
     }
 }
+
+.container__inside04{
+    position : relative;
+    height : 1086px;
+    background : #000;
+    color : #f5f5f7;
+}
+.inside04__element{
+    position : absolute;
+    left : 50%;
+    top : 50%;
+    transform : translate(-50%, -50%);
+    text-align: center;
+}
+/*뒷부분이랑 동일*/
+.label__text0{
+    font-size : 24px;
+    font-weight : 600;
+    letter-spacing: 0.009em;
+}
+.label__text1{
+    font-size : 48px;
+    font-weight : 600;
+}
+.label__text2{
+    font-size : 21px;
+    font-weight : 400;
+    letter-spacing: -0.041em;
+}
+.label__button button{
+    border : none;
+    outline : none;
+    background : #0071e3;
+    border-radius : 18px;
+    height : 36px;
+    width : 85px;
+    color : #fff;
+    font-size : 14px;
+    font-weight : 400;
+}
+.label__button button:hover{
+    background : #2997ff;
+}
+.label__more a{
+    color : #2997ff;
+    font-size : 17px;
+    font-weight : 400;
+}
+.label__more a:hover{
+    text-decoration: underline;
+}
+.inside04__img{
+    transform : translate(20%, 0)
+}
