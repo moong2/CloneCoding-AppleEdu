@@ -222,3 +222,29 @@ aside{
 .inside05__img{
     margin-top : 70px;
 }
+
+.container__inside06{
+    position : relative;
+    height : 1212px;
+    background : #fff;
+    color : #1d1d1f;
+}
+.inside06__imgCategory{
+    display : flex;
+}
+#inside06__element{
+    width : 980px;
+}
+#inside06__text0{
+    margin-bottom : 20px;
+    font-size: 42px;
+    font-weight : 600;
+    letter-spacing: -0.05em;
+}
+#inside06__more a{
+    margin-bottom : 30px;
+    font-size : 20px;
+    font-weight : 400;
+    letter-spacing: -0.05em;
+    color : #0066cc;
+}
