@@ -140,7 +140,7 @@ aside{
         left : 60vw;
     }
     to{
-        left : 50vw;
+        left : 49.5vw;
     }
 }
 
@@ -211,6 +211,7 @@ aside{
     color : #2997ff;
     font-size : 17px;
     font-weight : 600;
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .label__more a:hover{
     text-decoration: underline;
@@ -231,20 +232,80 @@ aside{
 }
 .inside06__imgCategory{
     display : flex;
+    padding-top : 55px;
+    justify-content: space-around;
 }
 #inside06__element{
     width : 980px;
 }
 #inside06__text0{
-    margin-bottom : 20px;
+    margin-bottom : 40px;
     font-size: 42px;
     font-weight : 600;
     letter-spacing: -0.05em;
 }
 #inside06__more a{
     margin-bottom : 30px;
-    font-size : 20px;
+    font-size : 22px;
     font-weight : 400;
     letter-spacing: -0.05em;
     color : #0066cc;
+}
+.imgCategory__inside{
+    text-align: left;
+}
+#iphone_se_logo{
+    margin-top : 20px;
+}
+.inside06__text0{
+    display : block;
+    margin-top : 20px;
+    font-size : 24px;
+    color : #1d1d1f;
+    font-weight : 600;
+    letter-spacing: -0.009em;
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.inside06__text1{
+    margin-top : 15px;
+    margin-bottom : 30px;
+    display : block;
+    font-size : 14px;
+    font-weight : 500;
+    color : #1d1d1f;
+    font-family : "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.inside06__text2 span{
+    display : block;
+    margin-top : 5px;
+    font-size : 14px;
+    font-weight : lighter;
+    font-family : "SF Pro KR","SF Pro Text","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+.inside06__button{
+    border : none;
+    outline : none;
+    margin-top : 20px;
+    background : #0071e3;
+    border-radius : 18px;
+    height : 24px;
+    width : 60px;
+    color : #fff;
+    font-size : 10px;
+    font-weight : 400;
+    cursor : pointer;
+}
+.inside06__button:hover{
+    background : #2997ff;
+}
+.inside06__more{
+    display : block;
+    margin-top : 18px;
+    color : #0066cc;
+    font-size : 12px;
+    font-weight : 500;
+    cursor : pointer;
+}
+.inside06__more:hover{
+    text-decoration: underline;
 }
