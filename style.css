@@ -309,3 +309,255 @@ aside{
 .inside06__more:hover{
     text-decoration: underline;
 }
+
+.container__inside07{
+    background : #f2f2f2;
+}
+.inside07__section0, .inside07__section1, .inside07__section2, .inside07__section3, .inside07__section4{
+    position : relative;
+    margin-top : 40px;
+    padding-top : 40px;
+}
+.inside07__0, .inside07__1, .inside07__2, .inside07__3, .inside07__4{
+    position : absolute;
+    height : 100%;
+    left : 50%;
+    transform : translate(-50%, 0);
+}
+._0__element, ._1__element, ._2__element, ._3__element, ._4__element{
+    margin-top : 40px;
+}
+.inside07__label{
+    margin-top : 40px;
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size : 48px;
+    color : #1d1d1f;
+    font-weight : 600;
+    text-align: center;
+    letter-spacing: -0.1em;
+}
+.inside07__more{
+    margin-top : 20px;
+    text-align: center;
+}
+.inside07__more a{
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size : 18px;
+    font-weight : 400;
+    letter-spacing: -0.1em;
+    color : #0066cc;
+}
+.inside07__more:hover a{
+    text-decoration: underline;
+}
+.inside07__text0{
+    font-size : 40px;
+    letter-spacing: -0.08em;
+    font-weight : 600;
+    color : #1d1d1f;
+    text-align: center;
+}
+.inside07__text1{
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size : 18px;
+    letter-spacing: -0.05em;
+    font-weight : 400;
+    text-align: center;
+}
+
+.inside07__section0{
+    height : 510px;
+}
+.inside07__0{
+    width : 1380px;
+    background : white;
+}
+._0__element{
+    display : flex;
+    justify-content: space-around;
+}
+._0__element_1, ._0__element_2{
+    height : 324px;
+    width : 652px;
+    border-radius: 20px;
+    justify-content: space-between;
+    display : flex;
+    background : #f5f5f7;
+}
+._0__element_1__background img{
+    margin-top : 35px;
+}
+._0__element_1__inside, ._0__element_2__inside{
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color : #1d1d1f;
+    font-size : 24px;
+    font-weight : 600;
+    letter-spacing: -0.1em;
+    line-height : 35px;
+    vertical-align: middle;
+    margin-top : 120px;
+}
+._0__element_1__inside{
+    padding-right : 45px;
+}
+._0__element_2__inside{
+    padding-left : 65px;
+}
+#text0_purple{
+    color : #8e70ff;
+}
+#text0_red{
+    color : #ff0030;
+}
+
+.inside07__section1{
+    height : 1309px;
+}
+.inside07__1{
+    height : 100%;
+}
+._1__element_1{
+    background-image: url("trade_in.jpg");
+    width : 1380px;
+    height : 564px;
+    margin-bottom : 35px;
+}
+._1__element_2{
+    background-image: url("why_apple.jpg");
+    width : 1380px;
+    height : 560px;
+}
+.element_1__inside, .element_2__inside{
+    padding-top : 150px;
+}
+.element_1__inside li, .element_2__inside li{
+    padding-bottom : 20px;
+}
+
+.inside07__section2{
+    height : 1643px;
+}
+._2__element_1, ._2__element_2{
+    display : flex;
+    height : 536px;
+    width : 1070px;
+    background : white;
+    justify-content: space-around;
+    margin-bottom : 10px;
+}
+._2__element_1__background img{
+    margin-top : 40px;
+}
+._2__element_2__background img{
+    margin-top : 180px;
+}
+.inside07__more__inside{
+    display : flex;
+    justify-content : space-around;
+}
+._2__element_3{
+    margin-top : 130px;
+}
+.element_3__inside{
+    display : flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.inside__text0, .inside__text1, .inside__more{
+    font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 18px;
+    font-weight : 600;
+    letter-spacing: -0.011em;
+    line-height : 30px;
+    margin-bottom: 20px;
+}
+.inside__text1{
+    font-weight : 400;
+}
+.inside__more{
+    color : #0066cc;
+    cursor : pointer;
+}
+.inside__more:hover{
+    text-decoration: underline;
+}
+
+.inside07__section3{
+    height : 1260px;
+}
+._3__element_1{
+    display : flex;
+    width : 1380px;
+    height : 500px;
+    justify-content: space-between;
+    background-color : white;
+}
+.inside07__subtitle{
+    font-size : 25px;
+    font-weight : 600;
+    text-align: center;
+}
+#ios14{
+    margin-left : 120px;
+}
+._3__element_down{
+    display : flex;
+    justify-content: space-between;
+    margin-top : 10px;
+}
+._3__element_2, ._3__element_3{
+    height : 610px;
+    background-color : white;
+}
+._3__element_2{
+    width : 675px;
+}
+._3__element_3{
+    width : 690px;
+}
+#transport{
+    padding-top : 55px;
+}
+._3__element_2__background{
+    text-align: center;
+}
+#privacy{
+    margin-top : 170px;
+    flex-direction: column;
+    vertical-align: middle;
+}
+#privacy li{
+    padding-bottom: 10px;
+}
+
+.inside07__section4{
+    height : 800px;
+}
+._4__element{
+    display : flex;
+    justify-content: space-between;
+}
+._4__element_1, ._4__element_2{
+    width : 640px;
+    height : 600px;
+    background-color : white;
+}
+._4__element_2{
+    background-image: url("apple_arcade.jpg");
+}
+#apple_music, #apple_arcade{
+    padding-top : 35px;
+}
+._4__element_1__background img{
+    padding-left : 35px;
+}
+#apple_music .inside07__more, #apple_arcade .inside07__more{
+    margin-top : 0px;
+    margin-bottom : 20px;
+}
+#apple_music .inside07__more a+a, #apple_arcade .inside07__more a+a{
+    margin-left : 20px;
+}
+#apple_arcade, #apple_arcade a{
+    color : white;
+}
