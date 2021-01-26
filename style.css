@@ -533,6 +533,9 @@ aside{
 .inside07__section4{
     height : 800px;
 }
+.inside07__4{
+    width : 1380px;
+}
 ._4__element{
     display : flex;
     justify-content: space-between;
@@ -561,3 +564,128 @@ aside{
 #apple_arcade, #apple_arcade a{
     color : white;
 }
+
+footer{
+    position : relative;
+    background-color: #f5f5f7;
+    color : #1d1d1f;
+}
+.footer__inside01, .footer__inside02, .footer__inside03{
+    position : relative;
+    margin-bottom : 20px;
+}
+.footer__inside01{
+    height : 221px;
+}
+.footer__inside02{
+    height : 470px;
+}
+.footer__inside03{
+    height : 80px;
+    margin-bottom : 0px;
+}
+.inside01, .inside02, .inside03{
+    position : absolute;
+    display : block;
+    left : 50%;
+    width : 980px;
+    height : 100%;
+    transform : translate(-50%, 0);
+}
+.inside01, .inside02{
+    border-bottom : 1px solid #d2d2d7;
+}
+.inside01__list{
+    font-size : 11px;
+    font-weight : 500;
+    letter-spacing: -0.1em;
+    color : #86868b;
+}
+.inside01__list li{
+    margin-top : 15px;
+}
+.inside02__upper{
+    display : flex;
+    font-size:  12px;
+    color : #515154;
+}
+.inside02__upper img{
+    cursor : pointer;
+    margin-right : 10px;
+}
+.inside02__down{
+    margin-top : 10px;
+    display : flex;
+    justify-content: space-between;
+    line-height : 30px;
+}
+.down__text0{
+    font-size : 12px;
+    font-weight : 600;
+    color : #1d1d1f;
+}
+.down__text1{
+    font-size:  12px;
+    color : #515154;
+    cursor : pointer;
+}
+.down__text1 li:hover{
+    text-decoration: underline;
+}
+.ul__upper{
+    margin-bottom : 20px;
+}
+.inside02__3{
+    margin-top : 30px;
+    font-size : 12px;
+    color : #86868b;
+}
+#end__blue{
+    color : #0066cc;
+    cursor : pointer;
+}
+#end__blue:hover{
+    text-decoration: underline;
+}
+.inside03__upper ul, .inside03__down ul{
+    display : flex;
+}
+.inside03__upper ul{
+    justify-content: space-between;
+}
+.inside03__upper{
+    font-size : 12px;
+    color : #86868b;
+}
+._3__upper_text1, ._3__upper_text2{
+    color : #515154;
+    font-weight : 600;
+}
+._3__upper_text1{
+    margin-right : 220px;
+}
+._3__upper_text1 li+li{
+    border-left : 1px solid #d2d2d7;
+    margin-left : 5px;
+    padding-left : 5px;
+}
+.inside03__down{
+    margin-top : 10px;
+    font-size : 10px;
+    color : #999999;
+}
+.inside03__down li+li{
+    padding-left : 5px;
+    padding-right : 2px;
+}
+/* @media only screen and (max-width : 734px){
+    article{
+        flex-direction: column;
+        padding : 0px;
+    }
+}
+@media only screen and (max-width : 1068px){
+    article{
+        max-width : 776px;
+    }
+} */
