@@ -86,6 +86,10 @@ nav{
     color : white;
     opacity : 1;
 }
+#nav__categoryList #menuBar{
+    color : white;
+    display : none;
+}
 #nav__categoryList .select{
     opacity : 0.56;
 }
@@ -100,6 +104,7 @@ aside{
     width : 55vw;
     height : 100%;
     left : 50%;
+    min-width : 767px;
     transform : translate(-50%, 0);
     animation-name : aside__direction;
     animation-duration : 1s;
@@ -141,6 +146,14 @@ aside{
     }
     to{
         left : 49.5vw;
+    }
+}
+@-webkit-keyframes aside__direction2{
+    from{
+        left : 20vw;
+    }
+    to{
+        left : 0vw;
     }
 }
 
@@ -217,11 +230,13 @@ aside{
     text-decoration: underline;
 }
 .inside04__img{
+    width : auto;
     margin-top : 70px;
     transform : translate(20%, 0)
 }
 .inside05__img{
     margin-top : 70px;
+    width : auto;
 }
 
 .container__inside06{
@@ -234,6 +249,12 @@ aside{
     display : flex;
     padding-top : 55px;
     justify-content: space-around;
+}
+.imgCategory__upper, .imgCategory__down{
+    display : flex;
+}
+.imgCategory__down li{
+    margin-right : 25px;
 }
 #inside06__element{
     width : 980px;
@@ -352,6 +373,7 @@ aside{
 }
 .inside07__text0{
     font-size : 40px;
+    word-break : break-all;
     letter-spacing: -0.08em;
     font-weight : 600;
     color : #1d1d1f;
@@ -359,6 +381,7 @@ aside{
 }
 .inside07__text1{
     font-family: "SF Pro KR","SF Pro Display","SF Pro Icons","Apple Gothic","HY Gulim","MalgunGothic","HY Dotum","Lexi Gulim","Helvetica Neue","Helvetica","Arial",sans-serif;
+    word-break : break-all;
     font-size : 18px;
     letter-spacing: -0.05em;
     font-weight : 400;
@@ -369,7 +392,7 @@ aside{
     height : 510px;
 }
 .inside07__0{
-    width : 1380px;
+    width : 72vw;
     background : white;
 }
 ._0__element{
@@ -418,12 +441,16 @@ aside{
 }
 ._1__element_1{
     background-image: url("trade_in.jpg");
+    background-repeat : no-repeat;
+    background-size : contain;
     width : 1380px;
     height : 564px;
     margin-bottom : 35px;
 }
 ._1__element_2{
     background-image: url("why_apple.jpg");
+    background-repeat : no-repeat;
+    background-size : contain;
     width : 1380px;
     height : 560px;
 }
@@ -678,14 +705,45 @@ footer{
     padding-left : 5px;
     padding-right : 2px;
 }
-/* @media only screen and (max-width : 734px){
-    article{
-        flex-direction: column;
-        padding : 0px;
+
+@media only screen and (max-width : 767px){
+    .header__inside01{
+        left : 0%;
+        transform : translate(5%, 0);
+    }
+    .nav__inside01{
+        left : 0%;
+        width : 90%;
+        transform : translate(5%, 0);
+    }
+    #nav__categoryList #notImg, #search{
+        display : none;
+    }
+    #nav__categoryList #menuBar{
+        display : block;
+        padding-top : 12px;
+    }
+    .aside__inside01{
+        left : 0%;
+        transform : translate(5%, 0);
+        animation-name : aside__direction2;
+    }
+    .inside__element{
+        width : auto;
     }
 }
 @media only screen and (max-width : 1068px){
-    article{
-        max-width : 776px;
+    .container__inside06{
+        height : 1918px;
     }
-} */
+    .inside06__imgCategory{
+        flex-direction: column;
+        margin-left : 250px;
+    }
+    .inside07__0, ._1__element_1, ._1__element_2{
+        width : 89vw;
+    }
+    .element_1__inside, .element_2__inside{
+        padding-top : 30px;
+    }
+}
