@@ -16,6 +16,7 @@ header{
     position : relative;
     background : #444;
     height : 40px;
+    display : block;
 }
 .header__inside01{
     position : absolute;
@@ -59,6 +60,22 @@ nav{
     height : 44px;
     background: #0A0A0A;
 }
+@keyframes navSweepToTop{
+    from {
+        height : 44px;
+    }
+    to{
+        height : 0px;
+    }
+}
+@keyframes navSweepToBottom{
+    from {
+        height : 0px;
+    }
+    to{
+        height : 44px;
+    }
+}
 .nav__inside01{
     position : absolute;
     width : 65vw;
@@ -86,7 +103,13 @@ nav{
     color : white;
     opacity : 1;
 }
-#nav__categoryList #menuBar{
+#nav__categoryList #menuBar button{
+    display : flex;
+    margin-top : 5px;
+    background: inherit;
+    outline : none;
+    border : none;
+    cursor : pointer;
     color : white;
     display : none;
 }
@@ -156,6 +179,114 @@ aside{
         left : 0vw;
     }
 }
+.aside__inside01_hidden{
+    position : absolute;
+    display : none;
+    z-index: 1;
+    width : 100%;
+    background-color: black;
+    height : 100vh;
+    animation : sweepToBottom;
+    animation-duration: 0.5s;
+}
+@keyframes sweepToBottom{
+    from {
+        height : 0vh;
+        opacity : 0.5;
+    }
+    to{
+        height : 100vh;
+        opacity : 1;
+    }
+}
+@keyframes sweepToTop{
+    from {
+        height : 100vh;
+        opacity : 1;
+    }
+    to{
+        height : 0vh;
+        opacity : 0;
+    }
+}
+.hidden__search{
+    width : 100%;
+    height : 65px;
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom : 1px solid rgba(245,245,247,0.5);
+}
+.hidden__search__bar{
+    width : 85vw;
+    margin : auto;
+    height : 36px;
+    background-image: url("globalnav_search_image.png");
+    background-repeat :no-repeat;
+    background-size : 20px;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-color : #1d1d1f;
+    border : none;
+    outline : none;
+    border-radius : 7px;
+    font-size : 17px;
+    padding-left : 40px;
+    color : white;
+}
+@keyframes barSweepToLeft{
+    from{
+        width : 85vw;
+    }
+    to{
+        width : 74vw;
+    }
+}
+@keyframes barSweepToRight{
+    from{
+        width : 74vw;
+    }
+    to{
+        width : 85vw;
+    }
+}
+.hidden__search__bar::placeholder{
+    color : #6e6e73;
+}
+.hidden__search__cancel{
+    color : #2997ff;
+    margin : auto;
+    cursor : pointer;
+    display : none;
+}
+.hidden__category{
+    margin-top : 20px;
+    width : 100%;
+    display : flex;
+    align-items: center;
+}
+.hidden__category__li{
+    width : 90vw;
+    margin : auto;
+}
+.hidden__category__li li{
+    cursor : pointer;
+    color : #f5f5f7;
+    opacity : 0.9;
+    display : flex;
+    align-items: center;
+    height : 44px;
+}
+.hidden__category__li #select{
+    opacity : 0.8;
+}
+.hidden__category__li li+li{
+    border-top : 1px solid rgba(245,245,247, 0.5);
+}
+.hidden__category__li li:hover{
+    color : white;
+    opacity : 1;
+} 
 
 .container__inside04{
     position : relative;
@@ -719,8 +850,8 @@ footer{
     #nav__categoryList #notImg, #search{
         display : none;
     }
-    #nav__categoryList #menuBar{
-        display : block;
+    #nav__categoryList #menuBar button{
+        display : flex;
         padding-top : 12px;
     }
     .aside__inside01{

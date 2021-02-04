@@ -20,7 +20,7 @@
     <nav>
         <div class = "nav__inside01">
             <ul id = "nav__categoryList">
-                <li id = "menuBar"><i class="fas fa-bars"></i></li>
+                <li id = "menuBar"><button onclick = "revealHidden()"><i id = "revealOrHide" class="fas fa-bars"></i></button></li>
                 <li>
                     <a href = "https://www.apple.com/kr/">
                         <img src = "nav_apple_image.png" onmouseover = "this.src = 'nav_apple_image(hover).png'" onmouseout = "this.src = 'nav_apple_image.png'">
@@ -45,6 +45,25 @@
             </ul>
         </div>
     </nav>
+    <section>
+        <div class = "aside__inside01_hidden">
+            <div class="hidden__search">
+                <input onclick = "revealCancel()" class = "hidden__search__bar" type = "text" placeholder = "apple.com 검색">
+                <!-- hiddenTag -->
+                <span onclick = "hiddenCancel()" class = "hidden__search__cancel">취소</span>
+            </div>
+            <div class="hidden__category">
+                <ul class = "hidden__category__li">
+                    <li><span>Mac</span></li>
+                    <li><span>iPad</span></li>
+                    <li id = "select"><span>iPhone</span></li>
+                    <li><span>Watch</span></li>
+                    <li><span>Music</span></li>
+                    <li><span>고객지원</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
     <aside>
         <div class = "aside__inside01">
             <ul id = "aside__categoryList">
@@ -109,6 +128,7 @@
             </ul>
         </div>
     </aside>
+    
     <article>
         <wrapper id = "container__wrapper">
             <div class = "container__inside04">
@@ -717,5 +737,6 @@
             </section>
         </wrapper>
     </footer>
+    <script type = "text/javascript" src = "main.js"></script>
 </body>
 </html>
